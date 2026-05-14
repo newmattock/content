@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
+  <title id="title">Sapat transcript memory pack workflow</title>
+  <desc id="desc">A workflow showing recordings moving through Daytona, Sapat transcription, review, chunking, and a retrieval-ready memory pack.</desc>
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .panel { fill: #111827; stroke: #334155; stroke-width: 2; rx: 18; }
+      .step { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; rx: 14; }
+      .accent { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; rx: 14; }
+      .text { fill: #0f172a; font-family: Inter, Arial, sans-serif; font-size: 21px; font-weight: 700; }
+      .sub { fill: #334155; font-family: Inter, Arial, sans-serif; font-size: 15px; }
+      .label { fill: #e5e7eb; font-family: Inter, Arial, sans-serif; font-size: 18px; font-weight: 700; }
+      .arrow { stroke: #93c5fd; stroke-width: 4; marker-end: url(#arrowhead); fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#93c5fd" />
+    </marker>
+  </defs>
+  <rect class="bg" width="1100" height="420" />
+  <rect class="panel" x="38" y="44" width="1024" height="332" />
+  <text class="label" x="76" y="88">Repeatable transcription workflow inside a Daytona workspace</text>
+  <rect class="step" x="76" y="130" width="160" height="105" />
+  <text class="text" x="105" y="170">Recordings</text>
+  <text class="sub" x="99" y="200">mp4 demos, calls</text>
+  <rect class="accent" x="286" y="130" width="160" height="105" />
+  <text class="text" x="326" y="170">Sapat</text>
+  <text class="sub" x="309" y="200">ffmpeg + provider</text>
+  <rect class="step" x="496" y="130" width="160" height="105" />
+  <text class="text" x="541" y="170">Review</text>
+  <text class="sub" x="519" y="200">clean transcript text</text>
+  <rect class="step" x="706" y="130" width="160" height="105" />
+  <text class="text" x="745" y="170">Chunk</text>
+  <text class="sub" x="727" y="200">stable IDs + overlap</text>
+  <rect class="accent" x="916" y="130" width="110" height="105" />
+  <text class="text" x="942" y="170">Pack</text>
+  <text class="sub" x="934" y="200">RAG-ready</text>
+  <path class="arrow" d="M236 182 L286 182" />
+  <path class="arrow" d="M446 182 L496 182" />
+  <path class="arrow" d="M656 182 L706 182" />
+  <path class="arrow" d="M866 182 L916 182" />
+  <rect class="step" x="180" y="274" width="240" height="58" />
+  <text class="sub" x="207" y="309">manifest.jsonl records source, chunk, tags</text>
+  <rect class="step" x="470" y="274" width="240" height="58" />
+  <text class="sub" x="498" y="309">chunks/*.md preserve reviewable context</text>
+  <rect class="step" x="760" y="274" width="210" height="58" />
+  <text class="sub" x="787" y="309">handoffs stay reproducible</text>
+</svg>
